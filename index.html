@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Employee Management System</h1>
+   <table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Salary</th>
+            <th>Department</th>
+            <th>Active</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Arun</td>
+            <td>25</td>
+            <td>25000</td>
+            <td>IT</td>
+            <td>true</td>
+        </tr>
+         <tr>
+            <td>2</td>
+            <td>Rahul</td>
+            <td>28</td>
+            <td>35000</td>
+            <td>HR</td>
+            <td>true</td>
+        </tr>
+         <tr>
+            <td>3</td>
+            <td>Ajay</td>
+            <td>24</td>
+            <td>20000</td>
+            <td>IT</td>
+            <td>false</td>
+        </tr>
+         <tr>
+            <td>4</td>
+            <td>John</td>
+            <td>30</td>
+            <td>45000</td>
+            <td>Finance</td>
+            <td>true</td>
+        </tr>
+         <tr>
+            <td>5</td>
+            <td>Vishnu</td>
+            <td>27</td>
+            <td>30000</td>
+            <td>IT</td>
+            <td>true</td>
+        </tr>
+    </tbody>
+   </table>
+   <button type="button" onclick="department()">Show IT Employees</button> <br>
+   <button type="button" onclick="highsalary()">Show High Salary Employees</button><br>
+   <input type="text" id="searchInput">
+   <button id="search">Search</button>
+
+
+   <h3 id="department"></h3>
+   <h3 id="empoloyetops"></h3>
+   <div id="searchResult"></div>
+    <h3 id="Employenames"></h3>
+    <h3 id="empoloyeupper"></h3>
+
+     
+     
+     <h3 id="inactive"></h3>
+     <h3 id="slice"></h3>
+     <h3 id="copy"></h3>
+     <h3 id="destructuring"></h3>
+    <script src="./employe.js"></script>
+</body>
+</html>
