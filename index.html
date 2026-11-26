@@ -7,6 +7,11 @@
 </head>
 <body>
     <h1>Employee Management System</h1>
+    <input type="text" id="searchInput">
+   <button id="search">Search</button>
+   <button id="disableBtn">Disable</button>
+   <button id="enableBtn">Enable</button>
+   <div id="searchResult"></div>
    <table>
     <thead>
         <tr>
@@ -63,8 +68,7 @@
    </table>
    <button type="button" onclick="department()">Show IT Employees</button> <br>
    <button type="button" onclick="highsalary()">Show High Salary Employees</button><br>
-   <input type="text" id="searchInput">
-   <button id="search">Search</button>
+   
 
 
    <h3 id="department"></h3>
@@ -79,6 +83,14 @@
      <h3 id="slice"></h3>
      <h3 id="copy"></h3>
      <h3 id="destructuring"></h3>
-    <script src="./employe.js"></script>
+     
+
+    <h1>Employee Management System</h1>
+
+    <div id="employeeList"></div>
+
+    <script type="module" src="./app.js"></script>
+    <script type="module" src="./employe.js"></script>
 </body>
+
 </html>

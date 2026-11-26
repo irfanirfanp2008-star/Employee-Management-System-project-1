@@ -55,17 +55,18 @@ const searchInput = document.getElementById("searchInput");
 const searchResult = document.getElementById("searchResult");
 
 function searchEmployee(name) {
-    return employees.find(emp => emp.name === name);
+    return employees.find((emp) => emp.name.toLowerCase() == name.toLowerCase());
 }
 
 document.getElementById("search").addEventListener("click", () => {
     const name = searchInput.value.trim();
+    console.log(name)
     const employee = searchEmployee(name);
 
     if (employee) {
         searchResult.innerHTML = `
             <h3>${employee.name}</h3>
-            <p>ID: ${employee.id}</p>
+            <p>ID: ${employee.id}</p> 
             <p>Age: ${employee.age}</p>
             <p>Salary: ${employee.salary}</p>
             <p>Department: ${employee.department}</p>
@@ -77,5 +78,23 @@ document.getElementById("search").addEventListener("click", () => {
 });
 
 let place =document.getElementById("searchInput")
+
 let placeholder=place.getAttribute("placeholder")
 place.setAttribute("placeholder","Enter Employe Name")
+
+let myButton = document.getElementById("searchInput");
+let disableBtn = document.getElementById("disableBtn");
+let enableBtn = document.getElementById("enableBtn");
+let searchi =document.getElementById("search")
+
+disableBtn.addEventListener("click", function () {
+    myButton.disabled = true;
+     searchi.disabled = true;
+    
+});
+
+enableBtn.addEventListener("click", function () {
+    myButton.disabled = false;
+    searchi.disabled = false;
+});
+
